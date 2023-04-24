@@ -1,0 +1,8 @@
+[alias]
+avian = "run -p avian-cli --bin avian --"
+
+[target.x86_64-apple-darwin]
+rustflags = [
+  "-C", "link-arg=-undefined",
+  "-C", "link-arg=dynamic_lookup",
+]

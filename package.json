@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "format": "prettier --write .",
+        "core": "pnpm --filter @avian/core",
+        "config": "pnpm --filter @avian/config",
+        "typecheck": "pnpm -r typecheck",
+        "lint": "turbo run lint",
+        "lint:fix": "turbo run lint -- --fix"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/plugin-syntax-import-assertions": "^7.20.0",
+        "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+        "prettier": "^2.8.7",
+        "turbo": "^1.9.3",
+        "turbo-ignore": "^1.9.3",
+        "typescript": "^5.0.4"
+    },
+    "overrides": {
+        "@types/node": "^18.0.0"
+    },
+    "engines": {
+        "pnpm": ">=7.14.0",
+        "npm": "pnpm",
+        "yarn": "pnpm",
+        "node": ">=18.0.0"
+    },
+    "eslintConfig": {}
+}

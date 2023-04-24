@@ -1,2 +1,5 @@
 * text=auto eol=lf
 *.real linguist-language=Assembly
+
+pnpm-lock.yaml -diff
+package-lock.json -diff
