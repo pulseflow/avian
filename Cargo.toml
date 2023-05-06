@@ -1,7 +1,12 @@
 [workspace]
 resolver = "2"
 members = [
+	"apps/kernel",
+	"apps/uapi"
 ]
 
 [workspace.dependencies]
 tokio = { version = "1" }
+
+[patch.crates-io]
+lai = { git = "https://github.com/pauliesnug/lai.rs", rev = "bbbfd61cb47334895c64f07bd0ce52d38ea4eddd" }
